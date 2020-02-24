@@ -18,6 +18,6 @@ Input dataset for implementation/testing: Folder "Disqus file".
 Output dataset: Folder "Output File"
 
 # How to run
-The file paths for the input file and output files are hardcoded in the code.  
-To execute the program, run the file JsonMerger.java  
-The input file, "Disqus file", must be placed in the top directory of the project.
+- The folder paths for the input file and output files are hardcoded in the code.  
+- To execute the program, compile and run the file JsonMerger.java (using command line: javac, etc)
+- The input file, "Disqus file", which contains multiple txt files, must be placed in the top directory of the project.
