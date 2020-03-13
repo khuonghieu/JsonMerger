@@ -14,5 +14,10 @@ Task of merge function:
 - Duplicates: If a comment node with the same id appears in two json document, then the merge json document will contain only one of them. Verify whether there are attributes whose values have changed. If so, update the values according to the most recent json document as given by the datetime in the file name.
 - Additions: If a new comment node appears in a newer version of the json document, simply add it to the merged version.
 
-Input dataset for implementation/testing: Folder "Disqus file".
+Input dataset for implementation/testing: Folder "Disqus file".  
 Output dataset: Folder "Output File"
+
+# How to run
+- The folder paths for the input file and output files are hardcoded in the code.  
+- To execute the program, compile and run the file JsonMerger.java (using command line: javac, etc)
+- The input file, "Disqus file", which contains multiple txt files, must be placed in the top directory of the project.
