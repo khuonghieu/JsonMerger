@@ -74,10 +74,18 @@ public class JsonMerger {
 			
 			//Write the final version of jsonArray to file, named with article ID
 			String fileNameWithArticleID = "./Output File/" + articleID + ".txt";
+			
 			PrintWriter writer = new PrintWriter(fileNameWithArticleID, "UTF-8");
+			writer.print("[");
+			int count =0;
 			for(JSONObject element : jsonArray) {
-				writer.println(element.toString());
+				writer.print(element.toString());
+				if (count<jsonArray.size()-1) {
+					writer.println(",");
+				}
+				count+=1;
 			}
+			writer.print("]");
 			writer.close();
 
 		}
